@@ -15,7 +15,7 @@ module VersionInTitlePatch
           :conditions => ['status = "open" and effective_date >= ?', Time.now.to_date],
           :order => :effective_date
         )
-        title << %Q| <span style="font-size:75%">= #{version.name} =</span>| if version
+        title << %Q| <span style="font-size:75%"> [#{version.name}]</span>| if version
       end
       title
     end
