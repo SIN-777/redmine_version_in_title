@@ -7,6 +7,7 @@ Redmine::Plugin.register :redmine_version_in_title do
   version '0.0.1'
   url 'https://github.com/SIN-777/redmine_version_in_title'
   author_url 'https://github.com/SIN-777/redmine_version_in_title'
+  settings :default => {:target_project_identifier => ''}, :partial => 'settings/form'
 end
 
 require File.dirname(__FILE__) + '/lib/version_in_title_patch.rb'
