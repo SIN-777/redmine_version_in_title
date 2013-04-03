@@ -1,4 +1,5 @@
 require 'redmine'
+require_dependency("application_helper")
 
 Redmine::Plugin.register :redmine_version_in_title do
   name 'Redmine Version In Title plugin'
